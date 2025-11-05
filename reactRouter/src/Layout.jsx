@@ -7,7 +7,7 @@ import Footer from "./componets/Footer/Footer";
 import { Outlet } from "react-router-dom";
 
 
-function Layout(){
+export default function Layout(){
 
 
     return(
