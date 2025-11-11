@@ -1,7 +1,7 @@
 import React,{useState} from "react";
-import userContext from "./UserContext";
+import UserContext from "./UserContext";
 
-
+ 
 
 const UserContextProvider = ({children}) =>{  
 
@@ -10,16 +10,18 @@ const UserContextProvider = ({children}) =>{
 
    return (
        
-    <userContext.Provider value = {{user,setUser}}>
+    <UserContext.Provider value = {{user,setUser}}>
     
     {children}
 
-    </userContext.Provider>
+    </UserContext.Provider>
 
 
-   )
+   );
 
 }
 
 
 export default UserContextProvider;
+
+// now we have to excess these store ,we can access it into main.jsx,app.jsx

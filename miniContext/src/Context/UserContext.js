@@ -1,5 +1,10 @@
 import React  from "react";
 
-const userContext = React.createContext;
+const UserContext = React.createContext;
 
-export default userContext;
+export default UserContext;
+
+
+// now we have to make this userContext to provider for  access of its feature.
+
+// for this  used another folder named UserContextProvider.

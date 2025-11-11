@@ -1,5 +1,5 @@
 import React, {useState,useContext} from "react";
-import userContext from "../Context/UserContext";
+import UserContext from "../Context/UserContext";
 
 
 function Login() {
@@ -7,7 +7,7 @@ function Login() {
 
    const [userName,setUserName] = useState('');
     const [password,setPassword] = useState('');
-    const {setUser} = useContext(userContext);
+    const {setUser} = useContext(UserContext);
 
     const handleSubmit = (e) =>{
          e.preventDefault();

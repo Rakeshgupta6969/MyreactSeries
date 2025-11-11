@@ -21,7 +21,7 @@ function Github() {
 }
 
 export default Github
-
+ 
 // export const githubInfoLoader = async () => {
 //     const response = await fetch('https://api.github.com/users/RakeshGupta6969')
 //     return response.json()
