@@ -16,7 +16,7 @@ function App() {
     const updatedTodo = (id,todoTitle) =>{
 
      setTodos((prev) =>   prev.map((prevTodo) =>  (prevTodo.id
-         === id ? todoTitle:prevTodo)) )  // here we want to update a single todos.  
+         === id ? todoTitle:prevTodo)) )  // here we want to update a single todo.  
 
     }
 
@@ -34,10 +34,10 @@ function App() {
 
     }
        // here completed the basic functionalities of the context API.
+     
+
+
        // now the concept of the localstorage.
-
-
-
        useEffect(() =>{
          
      const todos =    JSON.parse(localStorage.getItem("todos"));
