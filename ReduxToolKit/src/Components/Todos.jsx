@@ -14,8 +14,8 @@ import { removeTodo } from "../Features/Todo/todoSlice";
 
       <>
   {/* Heading */}
-  <div className="text-3xl font-semibold text-center text-indigo-400 my-6">
-    Todos
+  <div className="text-3xl font-semibold text-center text-indigo-400 my-6 rounded-md bg-gray-600 p-2">
+      Your Todos
   </div>
 
   {/* Todo List */}

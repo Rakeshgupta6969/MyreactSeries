@@ -1,13 +1,13 @@
 import { createSlice,nanoid } from "@reduxjs/toolkit";
 
 
-const initialState = {
+const initialState = { // initial State of the store
      
     todos:[
     
         {
            id:1,
-           text:"hello world",
+           text:"Rakesh Gupta that is your first Todos",
            
         },
 
@@ -17,24 +17,24 @@ const initialState = {
 }
 
 
-export const todoSlice  = createSlice({
+export const todoSlice  = createSlice({   // Slice is Nothing but it is a big version of the reducer(just like a function.)
       name:'todo',
       initialState,
 
       
-      reducers:{
+      reducers:{ // it is use for the updation for the Store.
      
         addTodo: (state ,action) => {
             
             const todo = {
                  id:nanoid(),
-           text:action.payload,
+           text:action.payload, // here payload means what we want to  inter the text for the Todo Creation.
    
             }
          
          state.todos.push(todo)
 
-        }, // here use of the state is that the access of  initial components of tje initialState.
+        }, // here use of the state is that the access of  current  components of the initialState.
 
 
         removeTodo :(state,action) =>{
