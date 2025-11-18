@@ -41,6 +41,11 @@ import { Client,  ID,Databases,Storage,Query } from "appwrite";
 
     }
 
+
+      async updatePost( {tittle,slug,content,featuredImage,status,useId}){
+        
+      }
+
   }
 
     const Service = new DatabasesService();
