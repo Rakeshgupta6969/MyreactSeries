@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { act } from "react";
-
    const initialState = {
         status: false,
         userData:null
@@ -15,7 +13,7 @@ import { act } from "react";
      login:(state,action) =>{
 
        state.status = true;
-       state.userData = action.payload,userData;
+       state.userData = action.payload.userData;
 
      },
      logout:(state) =>{
