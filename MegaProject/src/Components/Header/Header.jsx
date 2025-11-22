@@ -57,7 +57,39 @@ function Header(){
       </Link>
     </div>
 
+    <ul  className="flex,ml-auto">
 
+    {
+      navItems.map((item) =>
+        
+        item.active ? (
+
+           <li  key = {item.name}>
+               <button
+      
+               onChange={() => navigate(item.slug)}
+                className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"  
+               >{item.name}</button>
+
+           </li>
+        ) : null
+      )
+    }
+
+     {/* now give the logout button */}
+
+
+     {authStatus && (
+    
+     <li> 
+
+   <LogoutBtn/>
+
+     </li>
+
+     )}
+
+    </ul>
    </nav>
 
 
