@@ -17,7 +17,7 @@ function Login(){
         setError("");
 
       try{
-        const session =    await authService.login()
+        const session =    await authService.login(data)
 
         if(session){
       
@@ -25,7 +25,6 @@ function Login(){
 
              if(userData) dispatch(authLogin(userData));
              navigate("/");
-
 
         }
       }
@@ -68,7 +67,7 @@ function Login(){
 
      </p>
 
-       {error && <p className="text-red-500 text-center">
+       {error && <p className="text-red-500 mt-8 text-center">
         
         {error}</p>}
 
@@ -85,12 +84,40 @@ function Login(){
         {...register("email",{
 
         required: true,
+        validate:{
+         matchPattern:(value) => /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.
+         test(value)||
+         "Email address must be valid address",
+
+
+        }
 
         })}
 
 
       />
-      
+
+    <Input
+    
+    label ="password"
+    type = "password"
+    placeholder = "Enter your password"
+
+      {...register("password",{
+
+       required:true,
+
+      })}
+  
+    />
+    
+
+    <Button
+     
+     type = "submit"
+     className = "w-full"
+     
+    >Sign in</Button>
       
       
   

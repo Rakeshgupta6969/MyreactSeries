@@ -1,12 +1,10 @@
 import React from "react";
 import appWriteService from "../AppWrite/Config";
 import   {Link}  from "react-router-dom";
-function PostCard({$id,tittle,featuredImage}){
+function PostCard({$id,tittle,featuredImage}){ // here $id id written as id.
 
   return(
    
-
-
      <Link  to = {`/post/${$id}`}>
        <div className="w-full bg-gray-100 rounded-xl p-4">
 
