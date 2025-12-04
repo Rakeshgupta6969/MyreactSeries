@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 
- export default function Protected({children,authentication = true }){  // here function ka name folder ke name bhi rakh sakte h
+ export default function AuthLayout({children,authentication = true }){  // here function ka name folder ke name bhi rakh sakte h
 
      const navigate = useNavigate();
      const [loader,setLoader]   = useState(true)

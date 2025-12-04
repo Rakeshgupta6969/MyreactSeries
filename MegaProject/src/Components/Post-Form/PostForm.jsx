@@ -49,7 +49,7 @@ function PostForm({post}){
             }
      }
 
-     else{
+     else{ // that means the post is not exits so we want to create the new post
 
        const file = await appWriteService.uploadFile(data.image[0])
 
