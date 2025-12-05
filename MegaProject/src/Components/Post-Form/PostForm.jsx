@@ -1,6 +1,6 @@
 import React,{useCallback,useEffect} from "react";
 import { set, useForm } from "react-hook-form";
-import {Button,Input,Select,RTE}  from '..Index';
+import {Button,Input,Select,RTE}  from '../Index';
 import appWriteService from "../../AppWrite/Config";
 
 import { useNavigate } from "react-router-dom";
