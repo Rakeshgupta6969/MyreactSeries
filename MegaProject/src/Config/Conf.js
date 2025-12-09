@@ -7,7 +7,6 @@ const Conf = {
     appWriteBucketId:String(import.meta.env.VITE_BUCKET_ID),
 
 
-
 }
 
 
